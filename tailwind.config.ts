@@ -55,6 +55,7 @@ export default {
 				},
 				claude: {
 					purple: '#6D43C0',
+					secondary: '#F0EBFA',
 					lightPurple: '#9B87F5',
 					lilac: '#D6BCFA',
 					gray: '#F3F4F6',
