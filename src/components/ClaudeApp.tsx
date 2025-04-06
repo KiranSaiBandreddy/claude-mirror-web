@@ -4,6 +4,7 @@ import ClaudeHeader from './ClaudeHeader';
 import ClaudeMessageList from './ClaudeMessageList';
 import ClaudeInputBox from './ClaudeInputBox';
 import ClaudeEmptyState from './ClaudeEmptyState';
+import CountdownTimer from './CountdownTimer';
 
 interface Message {
   id: string;
@@ -56,7 +57,10 @@ const ClaudeApp = () => {
 
   return (
     <div className="claude-container">
-      <ClaudeHeader />
+      <div className="flex justify-between items-center px-4">
+        <ClaudeHeader />
+        <CountdownTimer />
+      </div>
       <main className="claude-main">
         {messages.length === 0 ? (
           <ClaudeEmptyState />
