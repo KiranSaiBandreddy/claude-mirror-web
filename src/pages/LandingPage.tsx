@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, Star, Zap } from 'lucide-react';
-import BenefitsList from '../components/BenefitsList';
 import { useToast } from '@/hooks/use-toast';
 
 // Mock functions for user authentication - these would be replaced with actual auth
@@ -98,11 +97,6 @@ const LandingPage = () => {
             />
           </div>
         </div>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Why Choose Our Service</h2>
-          <BenefitsList />
-        </section>
 
         <section className="bg-gray-50 rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-4 text-center">How It Works</h2>
